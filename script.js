@@ -31,8 +31,6 @@ const toast = document.getElementById('toast');
       }
     }, { passive: true });
 
-
-    // Orbital rail progresses with the page scroll.
     const orbitRail = document.querySelector('.orbit-rail');
     let orbitFrame = null;
     function updateOrbitRail() {
@@ -47,13 +45,11 @@ const toast = document.getElementById('toast');
     window.addEventListener('resize', updateOrbitRail, { passive: true });
     updateOrbitRail();
 
-    // The public app URL hasn't been supplied yet, so don't send visitors to a fake destination.
     document.getElementById('vybe-live-link')?.addEventListener('click', event => {
       event.preventDefault();
       showToast('Пока актуальной ссылки нет =(');
     });
 
-    // A small, restrained parallax on the hero artwork; disabled for reduced-motion users.
     const orbScene = document.querySelector('.orb-scene');
     if (window.matchMedia('(pointer: fine)').matches && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
       window.addEventListener('pointermove', event => {
