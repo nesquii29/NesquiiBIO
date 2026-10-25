@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#08090e">
+  <meta name="color-scheme" content="dark">
+  <meta name="description" content="Nesquii — личное пространство Никиты. Разработка, идеи и цифровое искусство.">
+  <title>Who is Nesquii?</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="app-root" id="top" data-sites-preview-theme="custom">
+    <div class="ambient ambient-a" aria-hidden="true"></div>
+    <div class="ambient ambient-b" aria-hidden="true"></div>
+    <div class="noise" aria-hidden="true"></div>
+    <div class="pointer-glow" aria-hidden="true"></div>
+
+    <svg class="orbit-rail" viewBox="0 0 76 1000" preserveAspectRatio="none" aria-hidden="true">
+      <defs>
+        <linearGradient id="rail-glow" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#aebfff" stop-opacity=".2" />
+          <stop offset=".48" stop-color="#829bff" stop-opacity=".95" />
+          <stop offset="1" stop-color="#d3ddff" stop-opacity=".35" />
+        </linearGradient>
+        <radialGradient id="rail-planet" cx="32%" cy="26%" r="80%">
+          <stop offset="0" stop-color="#6579bb" />
+          <stop offset=".55" stop-color="#252f5a" />
+          <stop offset="1" stop-color="#090d1c" />
+        </radialGradient>
+      </defs>
+      <path class="orbit-path secondary" d="M38 18 C4 170 4 330 38 500 S72 820 38 982" />
+      <path class="orbit-path" d="M38 18 C64 170 64 330 38 500 S12 820 38 982" />
+      <path class="orbit-path secondary" d="M38 18 C-2 245 12 390 38 500 S64 755 38 982" />
+      <path class="orbit-progress" d="M38 18 C64 170 64 330 38 500 S12 820 38 982" />
+      <g class="orbit-satellite" transform="translate(38 225)">
+        <circle class="orbit-planet" r="10" fill="url(#rail-planet)" />
+        <path d="M-7 -4 Q-2 -10 5 -5" fill="none" stroke="rgba(194,208,255,.65)" stroke-width="1" />
+        <path class="orbit-planet-shadow" d="M2 -8 A10 10 0 0 1 3 8 Q-4 7 -6 1 Q-2 -1 2 -8" />
+      </g>
+      <g class="orbit-satellite slow" transform="translate(38 690)">
+        <circle class="orbit-planet" r="5" fill="url(#rail-planet)" />
+        <circle cx="-1.5" cy="-1.5" r="1.2" fill="#c5d3ff" opacity=".8" />
+      </g>
+      <circle class="orbit-node" cx="38" cy="58" r="1.8" />
+      <circle class="orbit-node" cx="38" cy="500" r="2" />
+      <circle class="orbit-node" cx="38" cy="942" r="1.8" />
+    </svg>
+
+    <header class="topbar">
+      <nav class="nav" aria-label="Основная навигация">
+        <a href="#about">Обо мне</a>
+        <a href="#projects">Проекты</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+      <div class="availability"><span class="status-dot"></span><span>Летаю</span></div>
+    </header>
+
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-index"><span>01 /</span> ABOUT ME =)</div>
+      <div class="orb-scene" aria-hidden="true">
+        <div class="star-field"></div>
+        <div class="planet-halo"></div>
+        <div class="orb-core"><span class="planet-crater crater-a"></span><span class="planet-crater crater-b"></span><span class="planet-crater crater-c"></span><span class="planet-shadow"></span></div>
+        <div class="orbit"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="orbit orbit-three"></div>
+        <div class="asteroid-belt"><i class="asteroid asteroid-a"></i><i class="asteroid asteroid-b"></i><i class="asteroid asteroid-c"></i><i class="asteroid asteroid-d"></i></div>
+        <i class="light-speck speck-one"></i><i class="light-speck speck-two"></i><i class="light-speck speck-three"></i>
+      </div>
+      <div class="hero-copy">
+        <div class="eyebrow">дотер · программист</div>
+        <h1 id="hero-title">Nesquii</h1>
+        <p class="hero-subtitle">Никита&nbsp; / &nbsp;Разработчик&nbsp; / &nbsp;Вайбкодер</p>
+        <p class="hero-description">Начинающий программист, создатель сервиса по совместному прослушиванию музыки - VYBE.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#vybe">Исследовать VYBE <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+          <a class="button" href="https://github.com/nesquii29/VYBEProject" target="_blank" rel="noreferrer">Репозиторий ↗</a>
+        </div>
+      </div>
+      <a class="scroll-cue" href="#about"><span class="scroll-line"></span><span>листай ниже</span></a>
+    </section>
+
+    <section class="section reveal" id="about">
+      <div class="section-head">
+        <div><div class="section-kicker">01 — кто я такой?</div><h2>Студент, программист, вайбкодер.</h2></div>
+        <p class="section-intro">Я делаю все в кайф, нравится мне - это шедевр, не нравится - не делаю. Чисто чилл.</p>
+      </div>
+      <div class="about-grid">
+        <article class="about-card">
+          <span class="card-number">01 / MINDSET</span>
+          <h3>Гений мысли.</h3>
+          <p>Сейчас я изучаю разработку, пробую новое и собираю собственные проекты. Этот сайт — моё личное пространство, которое будет расти вместе со мной.</p>
+          <div class="principles"><span class="principle">дота</span><span class="principle">VYBE</span><span class="principle">программирование</span></div>
+        </article>
+        <article class="about-card">
+          <span class="card-number">02 / DISCIPLINE</span>
+          <h3>Мотивация. Идея. Реализация.</h3>
+          <p>Чистый интерфейс, продуманное движение, хороший ритм и атмосфера. Мне важно не количество эффектов, а то, как они работают вместе.</p>
+          <div class="principles"><span class="principle">design</span><span class="principle">code</span><span class="principle">evolution</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section reveal" id="vybe">
+      <div class="section-head">
+        <div><div class="section-kicker">02 — мой главный проект</div><h2>VYBE - индивидуально непревзойдённый.</h2></div>
+        <p class="section-intro">Идея, которую я превращаю в настоящий продукт: слушать музыку синхронно, проводить время вместе и создавать собственную атмосферу.</p>
+      </div>
+      <article class="vybe-feature">
+        <div class="vybe-copy">
+          <span class="vybe-tag">Vibe? · Nah, VYBE!</span>
+          <h3>VYBE<span class="vybe-period">.</span></h3>
+          <p>VYBE — сервис совместного прослушивания музыки. Комнаты, синхронизация воспроизведения и возможность разделить любимые треки с другими. Проект развивается вместе со мной — от первых идей до деталей интерфейса и логики работы.</p>
+        </div>
+        <div class="vybe-actions">
+          <a class="button button-primary" href="https://github.com/nesquii29/VYBEProject" target="_blank" rel="noreferrer">Открыть репозиторий ↗</a>
+          <a class="button" href="#vybe" id="vybe-live-link">Попробовать VYBE <span aria-hidden="true">→</span></a>
+        </div>
+      </article>
+    </section>
+
+    <section class="section reveal" id="projects">
+      <div class="section-head">
+        <div><div class="section-kicker">03 — избранное</div><h2>Мои проекты.</h2></div>
+        <p class="section-intro">Каждый проект — возможность проверить идею на практике и стать немного лучше, чем вчера.</p>
+      </div>
+      <a class="project-card" href="https://github.com/nesquii29" target="_blank" rel="noreferrer" aria-label="Посмотреть проекты на GitHub">
+        <div class="project-top">
+          <div class="project-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 7 3 12l5 5M16 7l5 5-5 5M14 4l-4 16" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <span class="arrow-link">↗</span>
+        </div>
+        <div>
+          <h3>Мои проекты</h3>
+          <p>На данный момент самый масштабный и наиболее интересный мне - сервис VYBE.</p>
+          <div class="project-meta">development · VYBE coding</div>
+        </div>
+      </a>
+    </section>
+
+    <section class="section reveal" id="contacts">
+      <div class="section-head">
+        <div><div class="section-kicker">04 — ну пишите ес че</div><h2>Найдёте вы меня тут.</h2></div>
+        <p class="section-intro">Соцсети, проекты и мысли, может сюда еще и стим прикрепить?</p>
+      </div>
+      <div class="social-grid">
+        <a class="social-card" href="https://t.me/nkrasnovv" target="_blank" rel="noreferrer" aria-label="Telegram — @nkrasnovv">
+          <span class="social-icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.7 4.4 18.5 20c-.2 1.1-.9 1.4-1.8.9l-5-3.7-2.4 2.3c-.3.3-.5.5-1 .5l.4-5.1 9.3-8.4c.4-.4-.1-.6-.6-.2L6 13.5l-5-1.6c-1.1-.4-1.1-1.1.2-1.6L20.7 2.7c.9-.3 1.7.2 1 1.7Z"/></svg></span>
+          <span><span class="social-label">Telegram</span><span class="social-handle">@nkrasnovv</span></span>
+        </a>
+        <a class="social-card" href="https://www.instagram.com/lidiciah.ae/" target="_blank" rel="noreferrer" aria-label="Instagram — lidiciah.ae">
+          <span class="social-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.7" r=".8" fill="currentColor" stroke="none"/></svg></span>
+          <span><span class="social-label">Instagram</span><span class="social-handle">@lidiciah.ae</span></span>
+        </a>
+        <a class="social-card" href="https://vk.ru/nkrasnovv" target="_blank" rel="noreferrer" aria-label="ВКонтакте — nkrasnovv">
+          <span class="social-icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M3.4 7.3h3.1c.2 0 .4.2.5.5.8 2.6 2.1 4.8 3 4.8.4 0 .5-.3.5-1V8.8c-.1-.9-.5-1.2-1.1-1.4-.2-.1-.2-.3 0-.4.4-.3 1.1-.4 2.1-.4h1.6c.4 0 .5.2.5.6v4.3c0 .3.1.5.4.5.7 0 2.2-2.2 3-4.4.1-.3.3-.4.6-.4h3c.4 0 .5.2.4.6-.3 1.4-2.5 4.5-2.5 4.5-.2.3-.2.5 0 .8.2.3 1 1 1.5 1.7.9 1.1 1.7 2 1.4 2.5-.1.2-.4.3-.8.3h-3c-.4 0-.7-.2-1-.5-.7-.8-1.5-1.9-2.3-1.9-.4 0-.6.3-.6.9v1c0 .4-.2.6-.8.6-2.2 0-4.5-1.4-6.2-3.8-2.4-3.2-3.1-5.6-3.3-6.3-.1-.4.1-.6.5-.6Z"/></svg></span>
+          <span><span class="social-label">ВКонтакте</span><span class="social-handle">@nkrasnovv</span></span>
+        </a>
+        <a class="social-card" href="https://github.com/nesquii29" target="_blank" rel="noreferrer" aria-label="GitHub — nesquii29">
+          <span class="social-icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .9a11.1 11.1 0 0 0-3.5 21.6c.6.1.8-.3.8-.6v-2.1c-3.3.7-4-1.4-4-1.4-.5-1.3-1.3-1.7-1.3-1.7-1.1-.8.1-.8.1-.8 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.5-1.4-5.5-6.1 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.7-2.8 5.8-5.5 6.1.4.3.8 1 .8 2v3.4c0 .3.2.7.8.6A11.1 11.1 0 0 0 12 .9Z"/></svg></span>
+          <span><span class="social-label">GitHub</span><span class="social-handle">@nesquii29</span></span>
+        </a>
+        <a class="social-card" href="mailto:nkrasnov129@gmail.com" aria-label="Написать на электронную почту">
+          <span class="social-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <span><span class="social-label">Почта</span><span class="social-handle">написать письмо</span></span>
+        </a>
+      </div>
+      <div class="contact-strip">
+        <div><strong>Есть дикий вопрос?</strong><p>Ну вот пиши на эту почту, наверное прочитаю.</p></div>
+        <a class="button" id="email-button" href="mailto:nkrasnov129@gmail.com">Написать мне <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <span class="footer-mark">NESQUII</span>
+      <span>Сайт мем, наверное будет меняться.</span>
+      <button class="back-top" type="button" id="back-top">Наверх ↑</button>
+    </footer>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </main>
+  <script src="script.js" defer></script>
+</body>
+</html>
